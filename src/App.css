@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+*, * ::before, * ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+h1 {
+    font-size: clamp(41px, 4vw, 58px);
+    font-weight: 800;
+    text-align: center;
+    padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+:root {
+    --color-white: #ffffff;
+    --color-grey: #333333;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: aquamarine;
+    background-image: url("/public/images/plant.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+p, li{
+    font-size: clamp(17px,4vw, 58px);
 }
 
-.App-link {
-  color: #61dafb;
+.quiz-card,.quiz-result {
+    background-color: white;
+    border-radius: 13px;
+    padding: 40px;
+    opacity: 0.91;
+    border: 5px solid navajowhite
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quiz-card {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-card ul li {
+    padding: 10px;
+
+}
+
+
+.quiz-card ul li:hover {
+    background-color: rgb(255, 219, 127);
+}
+
+footer {
+    text-align: center;
 }
