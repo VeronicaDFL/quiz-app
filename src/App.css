@@ -1,10 +1,10 @@
 *, * ::before, * ::after{
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: inherit;
 }
 h1 {
-    font-size: clamp(41px, 4vw, 58px);
+    font-size: clamp(61px, 4vw, 78px);
     font-weight: 800;
     text-align: center;
     padding: 15px;
@@ -29,25 +29,27 @@ body {
 
 
 p, li{
-    font-size: clamp(17px,4vw, 58px);
+    font-size: clamp(17px,4vw, 21px);
 }
 
 .quiz-card,.quiz-result {
     background-color: white;
     border-radius: 13px;
-    padding: 40px;
+    padding: 50px;
     opacity: 0.91;
     border: 5px solid navajowhite
 }
 
 .quiz-card {
     list-style-type: none;
-    margin: 0;
+    margin-left:70px ;
     padding: 0;
+    
 }
 
 .quiz-card ul li {
     padding: 10px;
+
 
 }
 
@@ -58,4 +60,5 @@ p, li{
 
 footer {
     text-align: center;
+
 }
